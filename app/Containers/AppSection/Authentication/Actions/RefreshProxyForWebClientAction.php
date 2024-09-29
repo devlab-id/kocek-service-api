@@ -2,7 +2,7 @@
 
 namespace App\Containers\AppSection\Authentication\Actions;
 
-use Apiato\Core\Exceptions\IncorrectIdException;
+use App\Ship\Exceptions\IncorrectIdException;
 use App\Containers\AppSection\Authentication\Exceptions\LoginFailedException;
 use App\Containers\AppSection\Authentication\Tasks\CallOAuthServerTask;
 use App\Containers\AppSection\Authentication\Tasks\MakeRefreshTokenCookieTask;

@@ -1,3 +1,3 @@
-# Apiato Contribution Guide
+# Kocek Contribution Guide
 
-The Apiato contributing guide can be found in the [Apiato documentation](https://apiato.io/docs/prologue/contribution-guide).
+The Kocek contributing guide can be found in the [Kocek documentation](https://kocek.devlab.id/docs/prologue/contribution-guide).

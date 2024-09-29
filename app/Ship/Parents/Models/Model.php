@@ -2,7 +2,7 @@
 
 namespace App\Ship\Parents\Models;
 
-use Apiato\Core\Abstracts\Models\Model as AbstractModel;
+use App\Ship\Abstracts\Models\Model as AbstractModel;
 
 abstract class Model extends AbstractModel
 {

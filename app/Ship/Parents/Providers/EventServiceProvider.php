@@ -2,7 +2,7 @@
 
 namespace App\Ship\Parents\Providers;
 
-use Apiato\Core\Abstracts\Providers\EventServiceProvider as AbstractEventServiceProvider;
+use App\Ship\Abstracts\Providers\EventServiceProvider as AbstractEventServiceProvider;
 
 /**
  * Class EventServiceProvider.

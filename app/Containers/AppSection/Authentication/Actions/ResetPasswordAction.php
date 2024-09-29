@@ -2,7 +2,7 @@
 
 namespace App\Containers\AppSection\Authentication\Actions;
 
-use Apiato\Core\Exceptions\IncorrectIdException;
+use App\Ship\Exceptions\IncorrectIdException;
 use App\Containers\AppSection\Authentication\Exceptions\InvalidResetPasswordTokenException;
 use App\Containers\AppSection\Authentication\Notifications\PasswordReset;
 use App\Containers\AppSection\Authentication\UI\API\Requests\ResetPasswordRequest;

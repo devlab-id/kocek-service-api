@@ -2,7 +2,7 @@
 
 namespace App\Ship\Parents\Factories;
 
-use Apiato\Core\Abstracts\Factories\Factory as AbstractFactory;
+use App\Ship\Abstracts\Factories\Factory as AbstractFactory;
 use Illuminate\Database\Eloquent\Model;
 
 /**

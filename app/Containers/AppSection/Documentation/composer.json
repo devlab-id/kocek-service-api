@@ -1,0 +1,27 @@
+{
+    "name": "kocek/documentation-generator-container",
+    "description": "An Kocek container which can creates a documentation from API annotations in your source code.",
+    "type": "kocek-container",
+    "license": "MIT",
+    "extra": {
+        "Kocek": {
+            "container": {
+                "name": "Documentation"
+            }
+        },
+        "laravel": {
+            "providers": [
+                "App\\Containers\\Vendor\\Documentation\\Providers\\DocumentGeneratorServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {},
+    "config": {
+        "allow-plugins": {
+            "apiato/container-installer": true
+        }
+    }
+}

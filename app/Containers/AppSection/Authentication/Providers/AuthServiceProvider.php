@@ -20,12 +20,12 @@ class AuthServiceProvider extends ParentAuthServiceProvider implements Deferrabl
 
     private function configPassport(): void
     {
-        if (config('apiato.api.enabled-implicit-grant')) {
+        if (config('kocek.api.enabled-implicit-grant')) {
             Passport::enableImplicitGrant();
         }
 
-        Passport::tokensExpireIn(Carbon::now()->addMinutes(config('apiato.api.expires-in')));
-        Passport::refreshTokensExpireIn(Carbon::now()->addMinutes(config('apiato.api.refresh-expires-in')));
+        Passport::tokensExpireIn(Carbon::now()->addMinutes(config('kocek.api.expires-in')));
+        Passport::refreshTokensExpireIn(Carbon::now()->addMinutes(config('kocek.api.refresh-expires-in')));
     }
 
     public function register(): void

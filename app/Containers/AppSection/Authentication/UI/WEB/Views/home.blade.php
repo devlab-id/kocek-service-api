@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Apiato</title>
+    <title>Kocek</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -101,11 +101,11 @@
             <a class="top-right button" href="javascript:void(0)" onclick="document.getElementById('form').submit()">Logout</a>
         @endauth
 
-        <div class="title m-b-md">Apiato</div>
+        <div class="title m-b-md">Kocek</div>
 
         <div class="links m-b-md">
-            <a href="https://apiato.io/">Documentation</a>
-            <a href="https://github.com/apiato/apiato">GitHub</a>
+            <a href="https://kocek.devlab.id/">Documentation</a>
+            <a href="https://github.com/kocek/kocek">GitHub</a>
         </div>
 
         <hr class="rounded m-b-md">

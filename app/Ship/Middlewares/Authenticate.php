@@ -2,7 +2,7 @@
 
 namespace App\Ship\Middlewares;
 
-use Apiato\Core\Middlewares\Http\Authenticate as CoreMiddleware;
+use App\Ship\Middlewares\Http\Authenticate as CoreMiddleware;
 
 class Authenticate extends CoreMiddleware
 {

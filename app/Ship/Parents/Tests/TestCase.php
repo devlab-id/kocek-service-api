@@ -2,10 +2,10 @@
 
 namespace App\Ship\Parents\Tests;
 
-use Apiato\Core\Abstracts\Tests\PhpUnit\TestCase as AbstractTestCase;
+use App\Ship\Abstracts\Tests\PhpUnit\TestCase as AbstractTestCase;
 use App\Ship\Enums\AuthGuard;
 use Faker\Generator;
-use Illuminate\Contracts\Console\Kernel as ApiatoConsoleKernel;
+use Illuminate\Contracts\Console\Kernel as KocekConsoleKernel;
 use Illuminate\Foundation\Application;
 use JetBrains\PhpStorm\Deprecated;
 
@@ -23,7 +23,7 @@ abstract class TestCase extends AbstractTestCase
     {
         $app = require __DIR__ . '/../../../../bootstrap/app.php';
 
-        $app->make(ApiatoConsoleKernel::class)->bootstrap();
+        $app->make(KocekConsoleKernel::class)->bootstrap();
 
         // create an instance of faker and make it available in all tests
         $this->faker = $app->make(Generator::class);

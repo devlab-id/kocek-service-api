@@ -2,7 +2,7 @@
 
 namespace App\Ship\Tests\Unit\Configs;
 
-use Apiato\Core\Services\Response;
+use App\Ship\Services\Response;
 use App\Ship\Tests\ShipTestCase;
 use League\Fractal\Serializer\DataArraySerializer;
 use PHPUnit\Framework\Attributes\CoversNothing;

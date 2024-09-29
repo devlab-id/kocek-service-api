@@ -2,7 +2,7 @@
 
 namespace App\Ship\Parents\Providers;
 
-use Apiato\Core\Abstracts\Providers\MainServiceProvider as AbstractMainServiceProvider;
+use App\Ship\Abstracts\Providers\MainServiceProvider as AbstractMainServiceProvider;
 
 /**
  * Class MainServiceProvider.

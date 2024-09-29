@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Apiato'),
+    'name' => env('APP_NAME', 'Kocek'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool)env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -165,6 +165,11 @@ return [
          * Application Service Providers...
          * NOTE: all service providers must be registered inside their container's main service providers.
          */
+        "App\\Ship\\Providers\\KocekServiceProvider",
+        "Vinkla\\Hashids\\HashidsServiceProvider",
+        "Prettus\\Repository\\Providers\\RepositoryServiceProvider",
+        "Spatie\\Fractal\\FractalServiceProvider",
+        "App\\Ship\\Generator\\GeneratorsServiceProvider"
     ])->toArray(),
 
     /*
@@ -181,6 +186,8 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // NOTE: all packages aliases must be registered inside their containers service providers
         // 'ExampleClass' => App\Example\ExampleClass::class,
+        "Hashids" => "Vinkla\\Hashids\\Facades\\Hashids",
+        "Fractal" => "Spatie\\Fractal\\Facades\\Fractal",
     ])->toArray(),
 
 ];

@@ -34,11 +34,11 @@ final class AuthenticationConfigTest extends UnitTestCase
         $this->assertEmpty(config('appSection-authentication.login.prefix'));
         $this->assertArrayHasKey('allowed-reset-password-urls', config('appSection-authentication'));
         $this->assertSame([
-            env('APP_URL', 'http://api.apiato.test/v1') . '/password/reset',
+            env('APP_URL', 'http://api.Kocek.test/v1') . '/password/reset',
         ], config('appSection-authentication.allowed-reset-password-urls'));
         $this->assertArrayHasKey('allowed-verify-email-urls', config('appSection-authentication'));
         $this->assertSame([
-            env('APP_URL', 'http://api.apiato.test/v1') . '/email/verify',
+            env('APP_URL', 'http://api.Kocek.test/v1') . '/email/verify',
         ], config('appSection-authentication.allowed-verify-email-urls'));
     }
 }

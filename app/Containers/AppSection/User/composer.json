@@ -1,7 +1,7 @@
 {
-    "name": "apiato/user",
-    "description": "apiato Container for apiato.",
-    "type": "apiato-container",
+    "name": "kocek/user",
+    "description": "Kocek Container for Kocek.",
+    "type": "kocek-container",
     "require": {
     }
 }

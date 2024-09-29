@@ -2,7 +2,7 @@
 
 namespace App\Containers\AppSection\Authentication\Actions;
 
-use Apiato\Core\Exceptions\IncorrectIdException;
+use App\Ship\Exceptions\IncorrectIdException;
 use App\Containers\AppSection\Authentication\Classes\LoginFieldParser;
 use App\Containers\AppSection\Authentication\UI\WEB\Requests\LoginRequest;
 use App\Containers\AppSection\Authentication\Values\IncomingLoginField;

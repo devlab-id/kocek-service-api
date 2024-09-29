@@ -2,7 +2,7 @@
 
 namespace App\Ship\Parents\Models;
 
-use Apiato\Core\Abstracts\Models\UserModel as AbstractUserModel;
+use App\Ship\Abstracts\Models\UserModel as AbstractUserModel;
 use App\Ship\Contracts\Authorizable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;

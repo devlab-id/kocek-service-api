@@ -2,9 +2,9 @@
 
 namespace App\Ship\Exceptions\Handlers;
 
-use Apiato\Core\Abstracts\Exceptions\Exception as CoreException;
-use Apiato\Core\Exceptions\AuthenticationException as CoreAuthenticationException;
-use Apiato\Core\Exceptions\Handlers\ExceptionsHandler as CoreExceptionsHandler;
+use App\Ship\Abstracts\Exceptions\Exception as CoreException;
+use App\Ship\Exceptions\AuthenticationException as CoreAuthenticationException;
+use Illuminate\Foundation\Exceptions\Handler as LaravelExceptionHandler;
 use App\Containers\AppSection\Authentication\UI\WEB\Controllers\LoginPageController;
 use App\Containers\AppSection\Authorization\UI\WEB\Controllers\UnauthorizedPageController;
 use App\Ship\Exceptions\AccessDeniedException;
@@ -21,7 +21,7 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
  * Class ExceptionsHandler.
  * A.K.A. app/Exceptions/Handler.php.
  */
-class ExceptionsHandler extends CoreExceptionsHandler
+class ExceptionsHandler extends LaravelExceptionHandler
 {
     /**
      * The list of the inputs that are never flashed to the session on validation exceptions.

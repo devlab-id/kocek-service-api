@@ -1,0 +1,6 @@
+{
+    "name": "Kocek/{{_container-name}}",
+    "description": "{{container-name}} Container for Kocek.",
+    "require": {
+    }
+}

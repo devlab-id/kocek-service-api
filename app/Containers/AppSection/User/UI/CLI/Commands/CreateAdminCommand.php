@@ -7,7 +7,7 @@ use App\Ship\Parents\Commands\ConsoleCommand as ParentConsoleCommand;
 
 class CreateAdminCommand extends ParentConsoleCommand
 {
-    protected $signature = 'apiato:create:admin';
+    protected $signature = 'kocek:create:admin';
     protected $description = 'Create a new User with the ADMIN role';
 
     public function handle(CreateAdminAction $action): void

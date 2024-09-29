@@ -11,11 +11,11 @@ use PHPUnit\Framework\Attributes\Group;
 
 #[Group('ship')]
 #[CoversNothing]
-final class ApiatoConfigTest extends ShipTestCase
+final class KocekConfigTest extends ShipTestCase
 {
     public function testConfigHasCorrectValues(): void
     {
-        $config = config('apiato');
+        $config = config('kocek');
         $expected = [
             'hash-id' => env('HASH_ID', true),
             'api' => [

@@ -2,7 +2,7 @@
 
 namespace App\Ship\Parents\Providers;
 
-use Apiato\Core\Abstracts\Providers\AuthServiceProvider as AbstractAuthServiceProvider;
+use App\Ship\Abstracts\Providers\AuthServiceProvider as AbstractAuthServiceProvider;
 
 /**
  * Class ShipAuthServiceProvider.

@@ -50,7 +50,7 @@ final class AuthServiceProviderTest extends UnitTestCase
             'passport.personal.tokens.destroy',
         ];
 
-        $apiPrefix = $this->removeLeadingSlashes(config('apiato.api.prefix'));
+        $apiPrefix = $this->removeLeadingSlashes(config('kocek.api.prefix'));
         $oAuthPrefix = $apiPrefix . 'v1/oauth';
         foreach ($passportRouteNames as $routeName) {
             $this->assertNotNull($registeredRoutes->getByName($routeName));

@@ -9,11 +9,19 @@ class WelcomeController extends ApiController
 {
     public function unversioned(): JsonResponse
     {
-        return response()->json('Welcome to Apiato');
+        return response()->json([
+            'success' => true,
+            'message' => 'Welcome to Kocek (API V1)',
+            'data' => null,
+        ]);
     }
 
     public function versioned(): JsonResponse
     {
-        return response()->json('Welcome to Apiato (API V1)');
+        return response()->json([
+            'success' => true,
+            'message' => 'Welcome to Kocek (API V1)',
+            'data' => null,
+        ]);
     }
 }

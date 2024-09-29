@@ -1,1 +1,1 @@
-### Apiato Authentication Container
+### Kocek Authentication Container

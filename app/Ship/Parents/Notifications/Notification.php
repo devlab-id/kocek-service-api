@@ -2,7 +2,7 @@
 
 namespace App\Ship\Parents\Notifications;
 
-use Apiato\Core\Abstracts\Notifications\Notification as AbstractNotification;
+use App\Ship\Abstracts\Notifications\Notification as AbstractNotification;
 
 class Notification extends AbstractNotification
 {

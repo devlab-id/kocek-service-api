@@ -1,9 +1,9 @@
 {
-    "name": "apiato/apiato",
+    "name": "devlav/kocek",
     "type": "project",
     "description": "A flawless framework for building scalable and testable API-Centric Apps with PHP and Laravel.",
     "keywords": [
-        "Apiato",
+        "Kocek",
         "API",
         "Framework",
         "API framework",
@@ -15,10 +15,10 @@
         "Porto SAP"
     ],
     "license": "MIT",
-    "homepage": "https://apiato.io/",
+    "homepage": "https://kocek.devlab.id/",
     "support": {
-        "issues": "https://github.com/apiato/apiato/issues",
-        "source": "https://github.com/apiato/apiato"
+        "issues": "https://github.com/kocek/kocek/issues",
+        "source": "https://github.com/kocek/kocek"
     },
     "authors": [
         {
@@ -46,7 +46,12 @@
         "laravel/framework": "^10.0",
         "laravel/tinker": "^2.8",
         "webmozart/assert": "^1.11",
-        "wikimedia/composer-merge-plugin": "^2.1"
+        "wikimedia/composer-merge-plugin": "^2.1",
+        "apiato/container-installer": "^2.0.8",
+        "prettus/l5-repository": "^2.9.0",
+        "spatie/laravel-fractal": "^6.0",
+        "vinkla/hashids": "^11.0",
+        "laravel/passport": "^11.0.0"
     },
     "require-dev": {
         "ext-intl": "*",
@@ -99,7 +104,18 @@
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [],
+            "providers": [
+                "KocekServiceProvider",
+                "Vinkla\\Hashids\\HashidsServiceProvider",
+                "Prettus\\Repository\\Providers\\RepositoryServiceProvider",
+                "Spatie\\Fractal\\FractalServiceProvider",
+                "App\\Ship\\Generator\\GeneratorsServiceProvider"
+            ],
+            "aliases": {
+                "Hashids": "Vinkla\\Hashids\\Facades\\Hashids",
+                "Fractal": "Spatie\\Fractal\\Facades\\Fractal"
+            }
         },
         "merge-plugin": {
             "include": [

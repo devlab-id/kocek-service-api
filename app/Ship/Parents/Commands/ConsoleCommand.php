@@ -2,7 +2,7 @@
 
 namespace App\Ship\Parents\Commands;
 
-use Apiato\Core\Abstracts\Commands\ConsoleCommand as AbstractConsoleCommand;
+use App\Ship\Abstracts\Commands\ConsoleCommand as AbstractConsoleCommand;
 
 abstract class ConsoleCommand extends AbstractConsoleCommand
 {

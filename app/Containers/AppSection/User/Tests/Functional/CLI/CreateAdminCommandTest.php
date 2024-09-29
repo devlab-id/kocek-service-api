@@ -22,7 +22,7 @@ final class CreateAdminCommandTest extends CliTestCase
             'password' => 'password',
             'password_confirmation' => 'password',
         ];
-        $this->artisan('apiato:create:admin')
+        $this->artisan('kocek:create:admin')
             ->expectsQuestion('Enter the username for this user', $data['name'])
             ->expectsQuestion('Enter the email address of this user', $data['email'])
             ->expectsQuestion('Enter the password for this user', $data['password'])
@@ -46,7 +46,7 @@ final class CreateAdminCommandTest extends CliTestCase
             'password_confirmation' => 'not_matching_password',
         ];
 
-        $this->artisan('apiato:create:admin')
+        $this->artisan('kocek:create:admin')
             ->expectsQuestion('Enter the username for this user', $data['name'])
             ->expectsQuestion('Enter the email address of this user', $data['email'])
             ->expectsQuestion('Enter the password for this user', $data['password'])
@@ -73,7 +73,7 @@ final class CreateAdminCommandTest extends CliTestCase
                 new \Exception('This is an exception message'),
             ]);
 
-        $this->artisan('apiato:create:admin')
+        $this->artisan('kocek:create:admin')
             ->expectsQuestion('Enter the username for this user', $data['name'])
             ->expectsQuestion('Enter the email address of this user', $data['email'])
             ->expectsQuestion('Enter the password for this user', $data['password'])

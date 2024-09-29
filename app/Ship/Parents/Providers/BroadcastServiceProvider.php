@@ -2,7 +2,7 @@
 
 namespace App\Ship\Parents\Providers;
 
-use Apiato\Core\Abstracts\Providers\BroadcastServiceProvider as AbstractBroadcastServiceProvider;
+use App\Ship\Abstracts\Providers\BroadcastServiceProvider as AbstractBroadcastServiceProvider;
 use Illuminate\Support\Facades\Broadcast;
 
 /**

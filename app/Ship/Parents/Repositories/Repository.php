@@ -2,7 +2,7 @@
 
 namespace App\Ship\Parents\Repositories;
 
-use Apiato\Core\Abstracts\Repositories\Repository as AbstractRepository;
+use App\Ship\Abstracts\Repositories\Repository as AbstractRepository;
 use App\Ship\Exceptions\DeleteResourceFailedException;
 use App\Ship\Exceptions\NotFoundException;
 use Illuminate\Contracts\Container\BindingResolutionException;

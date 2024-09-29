@@ -2,9 +2,9 @@
 
 namespace App\Ship\Kernels;
 
-use Apiato\Core\Middlewares\Http\ProcessETagHeadersMiddleware;
-use Apiato\Core\Middlewares\Http\ProfilerMiddleware;
-use Apiato\Core\Middlewares\Http\ValidateJsonContent;
+use App\Ship\Middlewares\Http\ProcessETagHeadersMiddleware;
+use App\Ship\Middlewares\Http\ProfilerMiddleware;
+use App\Ship\Middlewares\Http\ValidateJsonContent;
 use App\Ship\Middlewares\Authenticate;
 use App\Ship\Middlewares\EncryptCookies;
 use App\Ship\Middlewares\PreventRequestsDuringMaintenance;
